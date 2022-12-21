@@ -29,9 +29,18 @@ h1 {
 }
 
 .square {
+    position: relative;
     width: calc((100% / 7) - 2rem );
     aspect-ratio: 1/1;
     margin: 1rem 1rem;
     background-color: #1389B2;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
 }
